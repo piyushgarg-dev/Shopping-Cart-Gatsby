@@ -2,13 +2,13 @@ import React from "react"
 import Heading from "./Heading"
 import { Link } from "gatsby"
 
-function infoblock({ heading }) {
+function Infoblock({ heading }) {
   return (
-    <section className="bg-theme my-5 py-4">
+    <section className="bg-theme my-0 py-4">
       <div className="container">
         <Heading title={heading} />
         <div className="row">
-            <div className="col-10 col-sm-10 mx-auto text-white">
+            <div className="col-10 col-sm-10 mx-auto text-center text-white">
                 <p className="lead text-white mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius tristique mi porttitor interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam at nisi mollis, maximus ligula a, vestibulum mauris. Etiam fringilla venenatis diam.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius tristique mi porttitor interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam at nisi mollis, maximus ligula a, vestibulum mauris. Etiam fringilla venenatis diam.
@@ -25,4 +25,4 @@ function infoblock({ heading }) {
   )
 }
 
-export default infoblock
+export default Infoblock

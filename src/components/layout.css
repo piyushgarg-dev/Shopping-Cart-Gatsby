@@ -11,3 +11,10 @@
   align-items:center;
   flex-direction:column;
 }
+.about-background{
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction:column;
+}

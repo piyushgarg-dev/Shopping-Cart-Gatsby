@@ -6,10 +6,10 @@ const Footer = () =>{
             <div className="footer-block">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-12 pt-2 mx-auto text-center bg-dark text-light">
-                            <h6>
+                        <div className="col-12 py-5 mx-auto text-center bg-dark text-light">
+                            <h3>
                                 Awsm Copyright footer &copy; 2019
-                            </h6>
+                            </h3>
                         </div>
                     </div>
                 </div>
