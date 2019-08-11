@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import Herosection from "../components/Reuseable/Herosection"
 import Infoblock from '../components/Reuseable/Infoblock'
 import Dualinfoblock from '../components/Reuseable/Dualinfoblock'
-const about = ({ data }) => (
+const contact = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <Herosection
@@ -42,4 +42,4 @@ export const myquery = graphql`
   }
 `
 
-export default about
+export default contact

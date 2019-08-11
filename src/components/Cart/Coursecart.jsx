@@ -14,9 +14,9 @@ class Coursecart extends Component {
     render() {
         console.log(this.state.courses)
         return (
-            <section className="bg-dark text-white py-5">
+            <section className="text-primary py-5">
             <div className="container">
-                <Heading title="Courses"/>
+                <h1 className="text-center display-3 mb-5">Courses</h1>
                 <div className="row">
                     {
                         this.state.mycourses.map(({node})=>{
@@ -31,8 +31,10 @@ class Coursecart extends Component {
                                 <div className="flex-grow-1 px-3">
                                 <div className="d-flex justify-content-between">
                                 <h5 className="mb-1">{node.title}</h5>
-                                <h5 className="mb-1">{node.price}</h5>
+                                
+                                <h5 className="mb-1">${node.price}</h5>
                                 </div>
+                                <h5 className="mb-1 text-muted">{node.description.description}</h5>
                                 <button
                                 className="snipcart-add-item btn btn-danger"
                                 data-item-id={node.id}
