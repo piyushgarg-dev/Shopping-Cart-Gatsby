@@ -23,7 +23,7 @@ class Coursecart extends Component {
                             return(
                                 <div
                                 key={node.id}
-                                className="col-11 col-md-6 mx-auto d-flex"
+                                className="col-11 col-md-6 my-3 mx-auto d-flex"
                                 >
                                 <Img
                                     fixed={node.image.fixed}
@@ -33,9 +33,16 @@ class Coursecart extends Component {
                                 <h5 className="mb-1">{node.title}</h5>
                                 <h5 className="mb-1">{node.price}</h5>
                                 </div>
-                                <button className="btn btn-warning">
-                                    Join Now
-                                </button>
+                                <button
+                                className="snipcart-add-item btn btn-danger"
+                                data-item-id={node.id}
+                                data-item-name={node.title}
+                                data-item-price={node.price}
+                                data-item-weight=""
+                                data-item-url="http://myapp.com/products/bacon"
+                                data-item-description={node.description.description}>
+                                Join Now
+                            </button>
                                 </div>
                                 
                                 </div>
